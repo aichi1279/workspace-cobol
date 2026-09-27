@@ -1,0 +1,9 @@
+services:
+  cobol-jni:
+    image: correto25-gnucobol:al2023 
+    container_name: cobol-jni
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    stdin_open: true
+    tty: true
