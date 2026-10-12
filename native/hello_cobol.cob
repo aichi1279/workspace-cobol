@@ -20,12 +20,14 @@
            MOVE SPACES TO OUT-MESSAGE
            MOVE "Hello from GnuCOBOL" TO OUT-MESSAGE
        
-      *    STRING
-      *        PREFIX
-      *        FUNCTION TRIM(IN-NAME)
-      *        SUFFIX
-      *        DELIMITED BY SIZE
-      *        INTO OUT-MESSAGE
-      *    END-STRING
+           STRING
+               PREFIX
+               FUNCTION TRIM(IN-NAME)
+               SUFFIX
+               DELIMITED BY SIZE
+               INTO OUT-MESSAGE
+           END-STRING
        
+      *    MOVE 1 TO RETURN-CODE
+      *    STOP RUN.
            GOBACK.
